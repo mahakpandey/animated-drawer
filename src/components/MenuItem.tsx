@@ -15,6 +15,7 @@ const MenuItem = ({
       key={value.id}
       className="w-full flex justify-between cursor-pointer rounded-2xl sm:px-4 px-3 sm:py-3 py-2 border-gray-100 border-2 active:bg-gray-200"
       onClick={() => value.children?.length > 0 && handleNext(value.id)}
+      aria-label={value.title}
     >
       <div className="flex gap-4 items-center ">
         <div className="p-1 rounded-xl shrink-0">
@@ -31,7 +32,7 @@ const MenuItem = ({
       </div>
 
       {value.children?.length > 0 && (
-        <div className="flex items-center">
+        <div className="flex items-center" aria-label="Navigate to submenu">
           <ChevronRightIcon sx={{ width: "20px", height: "20px" }} />
         </div>
       )}
