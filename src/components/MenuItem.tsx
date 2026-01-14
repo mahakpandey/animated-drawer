@@ -13,7 +13,7 @@ const MenuItem = ({
   return (
     <Button
       key={value.id}
-      className="w-full flex justify-between cursor-pointer rounded-2xl px-4 py-3 border-gray-100 border-2 active:bg-gray-200"
+      className="w-full flex justify-between cursor-pointer rounded-2xl sm:px-4 px-3 sm:py-3 py-2 border-gray-100 border-2 active:bg-gray-200"
       onClick={() => value.children?.length > 0 && handleNext(value.id)}
     >
       <div className="flex gap-4 items-center ">

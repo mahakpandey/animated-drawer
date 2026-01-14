@@ -23,7 +23,7 @@ const DrawerComponent = ({ open, onClose }: SimpleDialogProps) => {
           onClick={handleClose}
         />
         <Drawer.Content
-          className="fixed inset-x-4 bottom-4 z-50 mx-auto w-full max-w-[450px] rounded-[20px] bg-white shadow-2xl overflow-hidden outline-none"
+          className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-[450px] rounded-[20px] bg-white shadow-2xl overflow-hidden outline-none"
           aria-label="Navigation drawer"
         >
           <motion.div animate={{ height: bounds.height }}>
